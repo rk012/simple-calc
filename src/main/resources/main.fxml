@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<!--suppress ALL -->
+
+<AnchorPane prefHeight="650.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller">
+   <children>
+      <GridPane layoutY="180.0" prefHeight="500.0" prefWidth="400.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#onBtnNum" text="7" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#onBtnNum" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#onBtnNum" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#onBtnOp" text="÷" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#onBtnNum" text="4" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#onBtnNum" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#onBtnNum" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#onBtnOp" text="×" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#onBtnNum" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#onBtnNum" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#onBtnOp" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#onBtnNum" text="0" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#onBtnAction" text="." GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#onBtnNum" text="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#onBtnAction" text="=" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#onBtnOp" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#onBtnAction" text="√" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" onAction="#onBtnAction" text="C" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" onAction="#onBtnAction" text="CE" GridPane.columnIndex="3" />
+            <Button mnemonicParsing="false" onAction="#onBtnOp" text="^" />
+         </children>
+      </GridPane>
+      <Label fx:id="display_label" alignment="CENTER_RIGHT" ellipsisString="" layoutX="10.0" layoutY="28.0" prefHeight="101.0" prefWidth="380.0" text="0" textAlignment="RIGHT" textOverrun="LEADING_ELLIPSIS" AnchorPane.rightAnchor="10.0">
+         <font>
+            <Font size="58.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>

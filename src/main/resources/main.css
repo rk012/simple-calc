@@ -1,0 +1,14 @@
+.button {
+    -fx-pref-width: 100px;
+    -fx-pref-height: 100px;
+    -fx-font-size: 40px;
+}
+
+.root {
+    -fx-background-color: #c0c0c0;
+}
+
+.label {
+    -fx-background-color: #aaaaaa;
+    -fx-font-family: Monospaced;
+}
